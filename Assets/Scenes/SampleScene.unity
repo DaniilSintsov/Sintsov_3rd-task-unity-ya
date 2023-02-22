@@ -470,8 +470,8 @@ GameObject:
   - component: {fileID: 799649191}
   - component: {fileID: 799649193}
   - component: {fileID: 799649192}
-  m_Layer: 0
-  m_Name: Rotated (1)
+  m_Layer: 3
+  m_Name: Rotated 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +490,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1831246267}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.259, y: 0.266, z: -136.14}
 --- !u!61 &799649192
 BoxCollider2D:
@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 1160510077}
   - component: {fileID: 1160510078}
   - component: {fileID: 1160510079}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,12 +1071,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160510076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.1, y: -22.7, z: -0.029553331}
+  m_LocalPosition: {x: 11.85, y: -30.6054, z: -0.029553331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1831246267}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1160510078
 SpriteRenderer:
@@ -1118,15 +1118,15 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 95d1262b9d3a047459ccf49bc2841634, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 70, y: 1}
+  m_Size: {x: 70, y: 16.665258}
   m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -1143,18 +1143,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.06201, y: 0}
+  m_Offset: {x: -0.015571594, y: 7.347275}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0.2508361}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 70, y: 1}
+    newSize: {x: 70, y: 16.665258}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
-    adaptiveTiling: 0
+    adaptiveTiling: 1
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 51.890812, y: 1}
+  m_Size: {x: 69.93916, y: 1.9411736}
   m_EdgeRadius: 0
 --- !u!1 &1359226641
 GameObject:
@@ -1325,8 +1325,8 @@ GameObject:
   - component: {fileID: 1396788920}
   - component: {fileID: 1396788921}
   - component: {fileID: 1396788922}
-  m_Layer: 0
-  m_Name: Rotated
+  m_Layer: 3
+  m_Name: Rotated 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1436,8 +1436,8 @@ GameObject:
   - component: {fileID: 1795091258}
   - component: {fileID: 1795091257}
   - component: {fileID: 1795091259}
-  - component: {fileID: 1795091264}
   - component: {fileID: 1795091265}
+  - component: {fileID: 1795091264}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1485,7 +1485,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 2036c0345efbc6d4a9e2d716269378f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1550,8 +1550,67 @@ MonoBehaviour:
   _velocity: {x: 0, y: 0}
   _layerMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 8
   _speed: 5
+  _yAnimation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.9941823
+      outSlope: 1.9941823
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4988154
+      value: 0.99472886
+      inSlope: 0.5533597
+      outSlope: 0.5533597
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9988847
+      value: 0.5509359
+      inSlope: -0.887463
+      outSlope: -0.887463
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _xAnimation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _jumpHeight: 3
+  _jumpLength: 2
 --- !u!70 &1795091265
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1597,8 +1656,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1396788920}
-  - {fileID: 1160510077}
   - {fileID: 799649191}
+  - {fileID: 1160510077}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
