@@ -69,7 +69,7 @@ public class Slide : MonoBehaviour
         _grounded = false;
 
         Vector2 deltaPosition = _velocity * Time.deltaTime;
-        Vector2 moveAlongGround = new Vector2(_groundNormal.y, _groundNormal.x);
+        Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
         Vector2 move = moveAlongGround * (deltaPosition.x * -(int)_playerDir);
 
         Movement(move, false);
@@ -83,15 +83,16 @@ public class Slide : MonoBehaviour
     {
         var crossOfGroundNormalAndVertical = Vector3.Cross(_groundNormal, Vector2.up);
 
-        if (crossOfGroundNormalAndVertical.z > 0)
+        switch (crossOfGroundNormalAndVertical.z)
         {
-            playerDir = PlayerDirection.Right;
-            _rb2d.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else if (crossOfGroundNormalAndVertical.z < 0)
-        {
-            playerDir = PlayerDirection.Left;
-            _rb2d.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            case > 0:
+                playerDir = PlayerDirection.Right;
+                _rb2d.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                break;
+            case < 0:
+                playerDir = PlayerDirection.Left;
+                _rb2d.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                break;
         }
     }
 
